@@ -1,0 +1,96 @@
+#animation_filante {
+    position: absolute;
+    animation: animate2 3s linear infinite;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(0deg) translateX(-90px);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:rotate(5deg) translateX(20px);
+        opacity: 0
+    }
+}
+
+.flash1 {
+    position: absolute;
+    animation: flash1 3s linear infinite;
+}
+
+@keyframes flash1 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+.flash2 {
+    position: absolute;
+    animation: flash2 3s linear infinite;
+}
+
+@keyframes flash2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+.hover:hover {
+    animation: hover 2s linear forwards;
+}
+
+@keyframes hover {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0.2;
+    }
+    100% {
+        opacity:1;
+    } 
+}
+
+#lanternes {
+    animation: light 3s linear forwards ;
+}
+
+@keyframes light {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    } 
+}
